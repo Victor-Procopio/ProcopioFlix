@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>ProcópioFlix</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+	<h1 class="page-title">
+		ProcópioFlix
+	</h1>
+	<div class="canais">
+		<h3>Canais sobre programação</h3>
+		<ul id="ulCanais"></ul>
+		<h3>Canais sobre ciência</h3>
+		<ul id="ulCanaisCiencias"></ul>
+		<h3>Filmes</h3>
+		<ul id="ulFilmes"></ul>
+	</div>
+</div>
+
+<div id="divAddFilme">
+	<input type="text" id="nome" placeholder="Nome">
+	<input type="text" id="imagem" placeholder="Imagem"><br>
+	<input type="text" id="url" placeholder="Url">
+	<select id="opcoesCategoria">
+		<option value="ulCanais">Canais de programação</option>
+		<option value="ulCiencias">Canais de ciência</option>
+		<option value="ulFilmes">Filmes</option>
+	</select><br>
+	<button type="submit" id="btnAdicionar" onclick="adicionar()">Adicionar</button>
+</div>
+
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
